@@ -474,7 +474,7 @@ const PortfolioPage = () => {
                 className="border border-[#64FFDA] text-[#64FFDA] hover:bg-[#64FFDA]/10
                   px-4 py-2 rounded-md transition-all duration-300 ease-in-out
                   hover:translate-y-[-2px] hover:shadow-[0_4px_12px_rgba(100,255,218,0.1)]"
-                onClick={() => window.open('/JivalJenson_Resume.pdf', '_blank')}
+                onClick={() => window.open('/Jival Jenson Resume.pdf', '_blank')}
               >
                 Resume
               </Button>
