@@ -559,7 +559,7 @@ const PortfolioPage = () => {
                   <li>▹ NextJs</li>
                   <li>▹ VueJs</li>
                   <li>▹ Svelte</li>
-                  <li>�� Go</li>
+                  <li>▹ Go</li>
                   <li>▹ Rust</li>
                   <li>▹ C</li>
                   <li>▹ Zig</li>
