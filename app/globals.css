@@ -81,24 +81,15 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-}
 
-/* Enhance scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #0a192f;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #233554;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #64FFDA;
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* Add smooth transitions for all interactive elements */
@@ -205,4 +196,10 @@ a, button, li {
 
 .float-animation {
   animation: float 6s ease-in-out infinite;
+}
+
+/* Add a fade effect for horizontal scroll indication */
+.scroll-fade-right {
+  mask-image: linear-gradient(to right, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
 }

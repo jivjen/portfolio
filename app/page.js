@@ -574,30 +574,42 @@ const PortfolioPage = () => {
         </section>
 
         <section id="experience" className="min-h-screen p-4 md:p-8 flex items-center mb-44">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-[#CCD6F6] text-2xl md:text-3xl font-semibold mb-4"><span className="text-gold-400">02.</span> Where I&apos;ve Worked</h2>
-            <div className="flex flex-col h-auto">
-              <div className="w-full overflow-x-auto mb-4">
-                <div className="flex md:flex-col">
+          <div className="max-w-4xl mx-auto w-full">
+            <h2 className="text-[#CCD6F6] text-2xl md:text-3xl font-semibold mb-4">
+              <span className="text-gold-400">02.</span> Where I&apos;ve Worked
+            </h2>
+            <div className="flex flex-col md:flex-row gap-8">
+              {/* Job tabs - horizontal scrolling on mobile, vertical on desktop */}
+              <div className="w-full md:w-32 overflow-x-auto md:overflow-x-visible mb-6 md:mb-0">
+                <div className="flex md:flex-col min-w-max md:min-w-0">
                   {Object.keys(jobs).map((job) => (
                     <button
                       key={job}
                       onClick={() => setActiveJob(job)}
-                      className={`py-2 px-4 text-left whitespace-nowrap ${activeJob === job ? 'text-gold-400 bg-purple-800' : 'text-purple-300'} hover:bg-purple-800 hover:text-gold-400 transition-colors md:border-l-2 md:border-purple-700`}
+                      className={`py-2 px-4 text-left whitespace-nowrap border-b-2 md:border-b-0 md:border-l-2
+                        transition-colors duration-300 min-w-[120px] md:min-w-0
+                        ${activeJob === job
+                          ? 'text-[#64FFDA] border-[#64FFDA] bg-[#112240]/50'
+                          : 'text-[#8892B0] border-[#233554] hover:bg-[#112240]/30 hover:text-[#64FFDA]'
+                        }`}
                     >
                       {job}
                     </button>
                   ))}
                 </div>
               </div>
-              <div className="w-full">
-                <h3 className="text-[#CCD6F6] text-xl font-semibold mb-1">{jobs[activeJob].title}</h3>
-                <p className="text-purple-300 mb-4">{jobs[activeJob].period}</p>
+
+              {/* Job details */}
+              <div className="flex-1">
+                <h3 className="text-[#CCD6F6] text-xl font-semibold mb-1">
+                  {jobs[activeJob].title}
+                </h3>
+                <p className="text-[#8892B0] mb-4">{jobs[activeJob].period}</p>
                 <ul className="space-y-4">
                   {jobs[activeJob].responsibilities.map((resp, index) => (
-                    <li key={index} className="flex items-start">
-                      <span className="text-gold-400 mr-2">▹</span>
-                      <span>{resp}</span>
+                    <li key={index} className="flex items-start text-[#8892B0]">
+                      <span className="text-[#64FFDA] mr-2">▹</span>
+                      <span className="flex-1">{resp}</span>
                     </li>
                   ))}
                 </ul>
