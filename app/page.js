@@ -381,7 +381,7 @@ const PortfolioPage = () => {
       period: "December 2019 - June 2020",
       responsibilities: [
         "Contributed to the development of tools used in hospital labs, including the integration of COVID-19 testing functionalities during the pandemic",
-        "Worked on data transmission using messaging queues, ensuring seamless communication between hospital devices and Cerner&apos;s backend systems",
+        "Worked on data transmission using messaging queues, ensuring seamless communication between hospital devices and Cerner's backend systems",
         "Developed and optimized lab tool interfaces, enhancing data accuracy and streamlining workflows for medical professionals",
       ]
     },
@@ -531,7 +531,7 @@ const PortfolioPage = () => {
             <h3 className="text-lg font-bold text-purple-200">[Age: {ageString}]</h3>
             <h3 className="text-lg font-bold text-purple-200 mb-4">[Experience: {expString}]</h3>
             <p className="text-purple-300 mb-8">
-              I&apos;m a software engineer fueled by an insatiable curiosity for how technology works. With experience across diverse tech stacks, I currently specialize in developing AI solutions for real-world challenges.            </p>
+              I'm a software engineer fueled by an insatiable curiosity for how technology works. With experience across diverse tech stacks, I currently specialize in developing AI solutions for real-world challenges.            </p>
             {/* <Button
               className="border border-[#64FFDA] text-[#64FFDA] bg-transparent
                 hover:bg-[#64FFDA]/10 px-8 py-4 rounded-md transition-all duration-300
@@ -548,7 +548,7 @@ const PortfolioPage = () => {
             <div className="flex flex-col md:flex-row gap-8">
               <div className="flex-1">
                 <p className="text-purple-300 mb-4">
-                  Turning curiosity into code has been my driving force since I can remember. I love diving into new frameworks and crafting solutions from scratch, learning and adapting as I go. Beyond coding, I&apos;m a multi-instrumentalist with a focus on keyboard, and you&lsquo;ll often find me immersed in books on philosophy, theology, and psychology.                </p>
+                  Turning curiosity into code has been my driving force since I can remember. I love diving into new frameworks and crafting solutions from scratch, learning and adapting as I go. Beyond coding, I'm a multi-instrumentalist with a focus on keyboard, and you&lsquo;ll often find me immersed in books on philosophy, theology, and psychology.                </p>
                 <p className="text-purple-300 mb-4">
                   I thrive on quick learning and tackling challenges, whether it&lsquo;s mastering a new tech stack or picking up a musical instrument. My current technical playground includes:
                 </p>
@@ -576,7 +576,7 @@ const PortfolioPage = () => {
         <section id="experience" className="min-h-screen p-4 md:p-8 flex items-center mb-44">
           <div className="max-w-4xl mx-auto w-full">
             <h2 className="text-[#CCD6F6] text-2xl md:text-3xl font-semibold mb-4">
-              <span className="text-gold-400">02.</span> Where I&apos;ve Worked
+              <span className="text-gold-400">02.</span> Where I've Worked
             </h2>
             <div className="flex flex-col md:flex-row gap-8">
               {/* Job tabs - horizontal scrolling on mobile, vertical on desktop */}
@@ -665,7 +665,7 @@ const PortfolioPage = () => {
         <section id="contact" className="min-h-screen flex items-center justify-center p-4 md:p-8">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-              <span className="text-gold-400">04. </span>What&apos;s Next?
+              <span className="text-gold-400">04. </span>What's Next?
             </h2>
             <h3 className="text-3xl md:text-5xl font-bold mb-6">Get In Touch</h3>
             <p className="text-purple-300 mb-8">
